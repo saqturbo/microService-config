@@ -1,1 +1,9 @@
-
+#Eureka client configurations 
+eureka:
+  instance:
+    ip-address: true #to fetch RegisterService server using server
+  client:
+    fetch-registry: true #allow to fetch service from userService project
+    register-with-eureka: true #allow to fetch service from userService project by Eureka server
+    service-url:
+      defaultZone: http://localhost:9699/eureka #local host path of RegisterService project
